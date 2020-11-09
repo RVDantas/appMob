@@ -1,0 +1,136 @@
+<ion-app>
+  <ion-split-pane when="sm" contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="light">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <!--<ion-list-header>
+            Navigate
+          </ion-list-header>-->
+          <ion-menu-toggle [autoHide]="false">
+            <ion-item button routerlink="/home.page.html">
+              <ion-icon slot="start" name='alert'></ion-icon>
+              <ion-label>
+                SOS
+              </ion-label>
+            </ion-item>
+            <ion-item button routerlink="/info.page.html">
+              <ion-icon slot="start" name='create'></ion-icon>
+              <ion-label>
+                Suas informações
+              </ion-label>
+            </ion-item>
+            <ion-item button routerlink="/contato.page.html">
+              <ion-icon slot="start" name='call'></ion-icon>
+              <ion-label>
+                Contatos de emergência
+              </ion-label>
+            </ion-item>
+            <ion-item button routerlink="/hist.page.html">
+              <ion-icon slot="start" name='book'></ion-icon>
+              <ion-label>
+                Histórico
+              </ion-label>
+            </ion-item>
+            <ion-item button routerlink="/permi.page.html">
+              <ion-icon slot="start" name='checkmark'></ion-icon>
+              <ion-label>
+                Permissões
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Main Content</h1>
+      </ion-content>
+    </div>
+
+  </ion-split-pane>
+</ion-app>
+
+
+
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      Menu
+    </ion-list-header>
+    <ion-menu-toggle auto-hide="false">
+      <ion-item button>
+        <ion-icon slot="start" name='people'></ion-icon>
+        <ion-label>
+          Suas informações
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon slot="start" name='call'></ion-icon>
+        <ion-label>
+          Contatos de emergência
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon slot="start" name='book'></ion-icon>
+        <ion-label>
+          Histórico
+        </ion-label>
+      </ion-item>
+      <ion-item button>
+        <ion-icon slot="start" name='true'></ion-icon>
+        <ion-label>
+          Permissões
+        </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-list>
+</ion-content>
+
+
+
+
+<ion-page class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+      <ion-title>Header</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h1>Main Content</h1>
+    <p>Click the icon in the top left to toggle the menu.</p>
+  </ion-content>
+</ion-page>-->
